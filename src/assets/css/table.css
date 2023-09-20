@@ -1,0 +1,49 @@
+/* Menggunakan * untuk memilih semua elemen dalam tabel */
+table {
+  font-family: 'Open Sans', sans-serif;
+  width: 95%;
+  border-collapse: collapse;
+  border: 3px solid #44475C;
+  margin: 50px 10px 0 10px;
+}
+
+/* Menggunakan warna latar belakang dan teks yang lebih kontras untuk header */
+table th {
+  text-transform: uppercase;
+  text-align: left;
+  background: #44475C;
+  color: #FFF;
+  padding: 8px;
+  /* Menambahkan spasi antara header */
+  min-width: 30px;
+}
+
+/* Menggunakan warna latar belakang yang berbeda untuk baris genap dan ganjil */
+table tr:nth-child(even) {
+  background: #eee;
+}
+table tr:nth-child(odd) {
+  background: #ccc;
+}
+
+/* Menggunakan batas kanan pada sel, kecuali yang terakhir dalam setiap baris */
+table td {
+  text-align: left;
+  padding: 8px;
+  border-right: 2px solid #7D82A8;
+}
+
+/* Menghapus batas kanan pada sel terakhir dalam setiap baris */
+table td:last-child {
+  border-right: none;
+}
+
+/* Menggunakan warna latar belakang yang berbeda untuk baris genap dalam isi tabel */
+table tbody tr:nth-child(2n) td {
+  background: #D4D8F9;
+}
+
+/* Menggunakan kelas .tcolumn untuk sel dengan teks yang di tengah */
+table .tcolumn {
+  text-align: center;
+}
